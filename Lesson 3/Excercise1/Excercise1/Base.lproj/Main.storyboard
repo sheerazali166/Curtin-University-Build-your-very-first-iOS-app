@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Excercise1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Who am i" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cmo-yN-bsy">
+                                <rect key="frame" x="158.66666666666666" y="352.66666666666669" width="76" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BFf-q1-Jto">
+                                <rect key="frame" x="140.66666666666666" y="404.66666666666669" width="112" height="43"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Toggle Text">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="1" green="0.5409764051" blue="0.84731429820000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="textChange:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OxG-ph-mRw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Counter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Cy-g9-acv">
+                                <rect key="frame" x="163.66666666666666" y="477.66666666666669" width="66" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BFf-q1-Jto" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1lR-be-b5V"/>
+                            <constraint firstItem="BFf-q1-Jto" firstAttribute="top" secondItem="Cmo-yN-bsy" secondAttribute="bottom" constant="30.670000000000002" id="3Ee-ED-WV7"/>
+                            <constraint firstItem="0Cy-g9-acv" firstAttribute="top" secondItem="BFf-q1-Jto" secondAttribute="bottom" constant="30.329999999999998" id="UjM-4o-ZLp"/>
+                            <constraint firstItem="0Cy-g9-acv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ag5-ox-uNb"/>
+                            <constraint firstItem="BFf-q1-Jto" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="iQ4-rb-pAc"/>
+                            <constraint firstItem="Cmo-yN-bsy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ng3-5S-L5t"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="counterDisplay" destination="0Cy-g9-acv" id="cMU-J0-LA1"/>
+                        <outlet property="theMessage" destination="Cmo-yN-bsy" id="qaF-8y-51P"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
